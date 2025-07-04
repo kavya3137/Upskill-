@@ -1,0 +1,74 @@
+/* Container Styling */
+.courses-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Courses List Styling for Horizontal Layout */
+.courses-list {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 20px;  /* Space between cards */
+  padding-bottom: 10px; /* Ensure space at the bottom for scrolling */
+  margin-top: 20px;
+}
+
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;  /* Set a fixed width for each card */
+  flex-shrink: 0;  /* Prevent cards from shrinking */
+  transition: transform 0.3s ease-in-out;
+  text-align: left;  /* Align text to the left */
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.course-card p {
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Button Styles */
+.enroll-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.enroll-btn:hover {
+  background-color: #45a049;
+}
+
+.enrolled-btn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  margin-top: 10px;
+}

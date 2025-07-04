@@ -1,0 +1,105 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #161335;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff; /* White color for logo */
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  color: white; /* Ensure nav items have white text */
+}
+
+.nav-item:hover {
+  background-color: #d9dadb;
+  color: #161335; /* Change text color on hover */
+}
+
+.logout {
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.welcome {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Ensures proper spacing */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Each card takes one-third of the row minus the gap */
+  max-width: calc(33.333% - 20px); /* Ensure max width aligns with flex basis */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #1a5fcc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Stack cards on smaller screens */
+    max-width: 100%;
+  }
+}

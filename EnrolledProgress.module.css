@@ -1,0 +1,62 @@
+/* EnrolledProgress.module.css */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Take the full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the viewport */
+  padding-top: 10pc;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.courseTitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.scrollableTableContainer {
+  max-height: 500px; /* Set a maximum height for the table container */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  margin-bottom: 20px; 
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table td {
+  background-color: #f9f9f9;
+}
+
+.table td:last-child {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.noData {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}

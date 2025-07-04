@@ -1,0 +1,44 @@
+.managerTeam {
+  max-height: 500px; /* Adjust height to fit your design */
+  overflow-y: auto; /* Add vertical scroll bar */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 16px; /* Padding for better spacing */
+  border: 1px solid #ccc; /* Optional border for clarity */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.learnerCard {
+  margin-bottom: 16px; /* Space between learner cards */
+  padding: 12px; /* Inner padding for cards */
+  border: 1px solid #ddd; /* Light card border */
+  border-radius: 6px; /* Rounded corners for cards */
+  background-color: #fff; /* White card background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+h3 {
+  margin: 8px 0;
+  color: #007acc; /* Optional: Blue header */
+}
+
+p {
+  margin: 4px 0;
+  color: #555;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #444;
+}
+
+li {
+  margin-bottom: 6px;
+}

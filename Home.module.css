@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 3rem; 
+}
+
+.formSection {
+  flex: 0 0 380px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.roleButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signin {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.signin a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.signin a:hover {
+  color: #2575fc;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.imageSection img {
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imageSection img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
